@@ -4,6 +4,7 @@ var express = require('express'),
   bodyParser = require('body-parser'),
   azure = require('azure-storage'),
   dataStore = initDataStore(),
+  port = process.env.DEV_PORT || 80,
   app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -13,7 +14,7 @@ app.post('/api/MailingList', function(req, res) {
   res.send('Thank you.');
 });
 
-app.listen(3000, function() {
+app.listen(port, function() {
   console.log('Listening on port 3000.');
 });
 
