@@ -1,3 +1,6 @@
+# Ignore dev env variable configuration
+.env
+
 # Logs
 logs
 *.log

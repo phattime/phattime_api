@@ -1,0 +1,32 @@
+{
+  "name": "phattime_api",
+  "version": "1.0.0",
+  "description": "api for PhatTime services",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "contributors": [
+    {
+      "name": "Chris Gomez",
+      "email": "cagomez@cellbycell.com"
+    },
+    {
+      "name": "Sean Hornsby",
+      "email": "mushiwulf@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phattime/phattime_api"
+  },
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "azure-storage": "^0.10.0",
+    "body-parser": "^1.15.0",
+    "dotenv": "^2.0.0",
+    "express": "^4.13.4"
+  }
+}
