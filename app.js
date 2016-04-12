@@ -1,10 +1,10 @@
-require('dotenv').config({silent: true});
+require('dotenv').config({ silent: true });
 
 var express = require('express'),
   bodyParser = require('body-parser'),
   azure = require('azure-storage'),
   dataStore = initDataStore(),
-  port = process.env.DEV_PORT || 80,
+  port = process.env.port || 3000,
   app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }))
